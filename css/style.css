@@ -1,0 +1,18 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inputs {
+    text-align: center;
+    padding: 20px;
+}
+input {
+    border-radius: 10%;
+    padding: 10px;
+}
+button {
+    border-radius: 10%;
+    padding: 10px;
+}
