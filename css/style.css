@@ -16,3 +16,19 @@ button {
     border-radius: 10%;
     padding: 10px;
 }
+.todo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 20px;
+    border-bottom: solid black 1px;
+}
+.todos-container {
+    margin: 125px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: lightgray;
+}
+.isDone {
+    text-decoration: line-through;
+}
