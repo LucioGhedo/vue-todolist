@@ -1,12 +1,10 @@
 var app = new Vue({
     el: '#root',
     data: {
-      newTodoText:[
-        {
-          text: '',
-          done: false,
-        },
-      ],
+      newTodoText: {
+        text: '',
+        done: false,
+      },
             todos: [
                 {
                   text: 'Fare i compiti',
@@ -33,17 +31,22 @@ var app = new Vue({
                 } else if(this.newTodoText.text.length > 0 ) {
                   // Pushare nell'array newTodoText
                   this.todos.push(this.newTodoText);
-                  this.newTodoText = [
-                    {
-                      text: '',
-                      done: false,
-                    },
-                  ];
+                  this.newTodoText = {
+                    text: '',
+                    done: false,
+                  }
               }
                 
             },
             removeTodo(index) {
                 this.todos.splice(index, 1);
+            },
+            doneOrNot(singleTodo) {
+              if(singleTodo.done === false) {
+                singleTodo.done = true
+              } else {
+                singleTodo.done = false
+              }
             }
         }
   
