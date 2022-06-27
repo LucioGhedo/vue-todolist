@@ -20,7 +20,7 @@ var app = new Vue({
                 },
                 {
                   text: 'Fare la todolist',
-                  done: false,
+                  done: true,
                 }
             ]
         },
